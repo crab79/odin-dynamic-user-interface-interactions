@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enroll Form</h1>
+    <form novalidate>
+        <legend> 
+            <label for="user-email">Email</label>
+            <input type="email" name="user" id="user-email">  
+            <span class="error" aria-live="polite"></span>  
+        </legend>
+        <legend>
+            <label for="user-country">Country</label>
+            <select id="user-country" required>
+                <option value="">Select a country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="MX">Mexico</option>
+                <option value="GB">United Kingdom</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="JP">Japan</option>
+                <option value="CN">China</option>
+                <option value="IN">India</option>
+                <option value="BR">Brazil</option>
+            </select>            
+            <span class="error" aria-live="polite"></span>  
+        </legend>
+        <legend>
+            <label for="user-zip-code">Zip code</label>
+            <input type="text" name="user-zip-code" id="user-zip-code" maxlength="6" minlength="6" required>
+            <span class="error" aria-live="polite"></span>      
+        </legend>
+        <legend>
+            <label for="user-pwd">Password</label>
+            <input type="password" name="user-pwd" id="user-pwd"  maxlength="12" minlength="6" required>    
+            <span class="error" aria-live="polite"></span>      
+        </legend>
+        <legend>
+            <label for="user-pwd-confirm">Confirm Your Password</label>
+            <input type="password" name="user-pwd-confirm" id="user-pwd-confirm" maxlength="12" minlength="6" required>    
+            <span class="error" aria-live="polite"></span>      
+        </legend>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
